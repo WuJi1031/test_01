@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/testing"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/search"/>
+        <include layout="@layout/first"/>
+        <include layout="@layout/second"/>
+        <View
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="1dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pm"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="各项指数"
+                android:textSize="19sp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#ffffff"/>
+                <TextView
+                    android:id="@+id/pm25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pm2.5"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#ffffff"/>
+                <TextView
+                    android:id="@+id/aqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AQI"
+                    android:textSize="16sp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#ffffff"/>
+                <TextView
+                    android:id="@+id/wrjb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="污染等级"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp"
+                    android:textColor="#ffffff"/>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/sehnghuo2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="30dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="参考指数"
+                        android:textSize="19sp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="#ffffff"/>
+                    <TextView
+                        android:id="@+id/ssd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="舒适度指数"
+                        android:textSize="14sp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="#ffffff"/>
+                    <TextView
+                        android:id="@+id/cyf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="穿衣指数"
+                        android:textSize="14sp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="#ffffff"/>
+                    <TextView
+                        android:id="@+id/sport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="运动指数"
+                        android:layout_marginTop="20dp"
+                        android:textSize="14sp"
+                        android:textColor="#ffffff"/>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

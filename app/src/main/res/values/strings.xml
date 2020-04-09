@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">天气</string>
+    <string name="intro">
+       天气查询，当天天气，三天天气。
+    </string>
+    <string name="intro_simp">
+        本软件暂时为我所有
+    </string>
+</resources>

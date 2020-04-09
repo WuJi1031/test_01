@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Zhongjian"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:id="@+id/scro"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:id="@+id/xiangdui"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/dizhi"
+            android:visibility="gone"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:background="#DBD1D1"
+            android:hint="地址"/>
+        <Button
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:id="@+id/qeihuan"
+            android:layout_toRightOf="@+id/dizhi"
+            android:layout_width="120dp"
+            android:layout_height="8dp"
+            android:background="#06D3E4"
+            />
+        <Button
+            android:layout_width="1dp"
+            android:layout_height="6dp"
+            android:background="#296E74"
+            android:layout_gravity="center"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/shuaxin"
+            android:layout_width="120dp"
+            android:layout_height="8dp"
+            android:layout_alignParentRight="true"
+            android:background="#06D3E4"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/jieguo"
+            android:singleLine="false"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/jieguo1"
+            android:padding="10dp"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/kqzl"
+            android:singleLine="false"
+            android:padding="10dp"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/cyzs"
+            android:singleLine="false"
+            android:padding="10dp"
+            android:layout_margin="20dp"/>
+        <ImageView
+
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:id="@+id/tupian"
+            android:scaleType="fitXY"/>
+        <Button
+            android:id="@+id/speak1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="我比较懒"
+            android:background="#55E908"/>
+
+    </LinearLayout>
+
+<WebView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/web"/>
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
